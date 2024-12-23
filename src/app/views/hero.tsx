@@ -37,7 +37,7 @@ export default function Hero() {
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/40"></div>
         {/* Header */}
-        <header className="fixed top-0 left-0 w-full flex items-center justify-between px-4 py-4 sm:px-6 md:px-8 lg:px-12 z-10 bg-zinc-700 ">
+        <header className="fixed top-0 left-0 w-full flex items-center justify-between px-4 py-4 sm:px-6 md:px-8 lg:px-12 z-10  ">
           <div className="text-xl sm:text-2xl md:text-3xl text-orange-400 font-cinzel">
             Flavor
           </div>

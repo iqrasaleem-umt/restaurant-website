@@ -1,9 +1,11 @@
-// Menu.tsx
-// Menu.tsx
 import Menucard from '@/components/menucard';
+import { menuItems } from '../utils/mock';
 import React from 'react';
+import Link from 'next/link';
 
 export default function Menu() {
+  const Menuchunks = menuItems.slice(0, 4); // Take the first 4 items from menuItems
+  
   return (
     <div>
       <div
@@ -13,13 +15,26 @@ export default function Menu() {
         <h1 className="text-orange-400 text-xl">Menu</h1>
         <h1 className="text-black text-2xl mt-7">Checkout our tasty menu</h1>
         <div className="flex gap-4 text-black mt-7 font-serif">
-          <p className="text-orange-400">All</p>
-          <p className="hover:text-orange-400">Starter</p>
-          <p className="hover:text-orange-400">Salads</p>
-          <p className="hover:text-orange-400">Specialty</p>
+          <Link href="category/speciatty" className="text-orange-400">Specialty</Link>
+          <Link href="category/starter" className="hover:text-orange-400">Starter</Link>
+          <Link href="category/salads" className="hover:text-orange-400">Salads</Link>
+          <Link href="/menu" className="hover:text-orange-400">All</Link>
         </div>
       </div>
-      <div className='px-10'><Menucard /></div>
+      
+      {/* Render Menucard for each item */}
+      <div className="grid grid-cols-2 gap-8 mt-8 px-4 ">
+        {Menuchunks.map((item) => (
+          <Menucard  
+            key={item.id}
+            name={item.name}
+            description={item.description}
+            price={item.price}
+            category={item.category}
+            imageUrl={item.imageUrl}  // Pass imageUrl prop as well
+          />
+        ))}
+      </div>
     </div>
   );
 }
