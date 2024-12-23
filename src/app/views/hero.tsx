@@ -37,7 +37,7 @@ export default function Hero() {
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/40"></div>
         {/* Header */}
-        <header className="fixed top-0 left-0 w-full flex items-center justify-between px-4 py-4 sm:px-6 md:px-8 lg:px-12 z-10 ">
+        <header className="fixed top-0 left-0 w-full flex items-center justify-between px-4 py-4 sm:px-6 md:px-8 lg:px-12 z-10 bg-zinc-700 ">
           <div className="text-xl sm:text-2xl md:text-3xl text-orange-400 font-cinzel">
             Flavor
           </div>
@@ -48,7 +48,7 @@ export default function Hero() {
             <Link href="#why-us" className="text-white hover:text-gray-300">
               Why Us
             </Link>
-            <Link href="/menu" className="text-white hover:text-gray-300">
+            <Link href="#menu" className="text-white hover:text-gray-300">
               Menu
             </Link>
             <Link href="#about" className="text-white hover:text-gray-300">
@@ -115,14 +115,12 @@ export default function Hero() {
           </div>
         </div>
       </div>
+    <div>
+  <div>
+   
+</div>
 
-      <div id="about" className="h-screen bg-gray-200 flex items-center justify-center">
-        <h2 className="text-3xl">Menu</h2>
-      </div>
-
-      <div id="contact" className="h-screen bg-gray-300 flex items-center justify-center">
-        <h2 className="text-3xl">Contact</h2>
-      </div>
-    </div>
+</div>
+</div>
   );
 }
