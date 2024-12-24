@@ -5,8 +5,9 @@ const getmenuItemsByCategory = (category: string) => {
   return menuItems.filter((item) => item.category === category);
 };
 
-export default function Page({ params }: { params: { slug: string } }) {
-  const { slug } = params; // Extract slug from params
+export default async function Page({ params }: { params: { slug: string } }) {
+  const { slug } = await params; // Await params if asynchronous
+
   const result = getmenuItemsByCategory(slug); // Filter menu items by category
 
   return (
@@ -24,3 +25,4 @@ export default function Page({ params }: { params: { slug: string } }) {
     </div>
   );
 }
+
