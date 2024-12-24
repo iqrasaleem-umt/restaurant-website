@@ -18,7 +18,7 @@ export const menuItems: MenuItem[] = [
     name: "Veggie Salad",
     description: "Fresh and healthy veggie salad",
     price: "$4.50",
-    category: "speciatty",
+    category: "salads",
     imageUrl: "/chickens.jpg",
   },
   {
@@ -42,7 +42,7 @@ export const menuItems: MenuItem[] = [
     name: "Pizza",
     description: "Cheese and tomato pizza with crispy crust",
     price: "$8.00",
-    category: "salad",
+    category: "speciatty",
     imageUrl: "/chickens.jpg",
   },
   {
@@ -50,7 +50,7 @@ export const menuItems: MenuItem[] = [
     name: "Fried Veggie",
     description: "Fried veggie with a mix of vegetables and meat",
     price: "$5.00",
-    category: "salad",
+    category: "salads",
     imageUrl: "/chickens.jpg",
   },
   {
